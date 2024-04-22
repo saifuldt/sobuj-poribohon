@@ -1,0 +1,3932 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap'); */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.photo-gel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+.photo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+
+}
+.photo img{
+    width: 400px;
+    height: 420px;
+    border-radius: 20px;
+    
+}
+
+
+/* --------------------------- */
+    /* for mobile device */
+/* --------------------------- */
+@media screen and (max-width:600px) {
+
+    /* menu/nav */
+
+   form#sub_btn label{display: none;}
+   form#sub_btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 20px;
+        width: 100%;
+
+    }
+
+    .menu ul {
+        color: #000;
+        font-family: "Space Grotesk";
+        visibility: hidden;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgb(242, 241, 241);
+        list-style: none;
+        padding: 10px;
+        margin-right: 20px;
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+    }
+
+    .menu ul.active,
+    .uncheck.active {
+        display: block;
+        visibility: visible;
+    }
+
+    .uncheck {
+        display: none;
+        visibility: hidden;
+        color: white;
+    }
+
+    .check img {
+        padding-right: 10px;
+        cursor: pointer;
+    }
+
+    .close {
+        top: 0;
+        right: 10px;
+        position: absolute;
+    }
+
+    .menu ul li {
+        text-align: center;
+        padding: 5px;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    .menu ul li a:hover {
+        color: #5d5b5b;
+        border-bottom: 2px solid #615f5f;
+        ;
+    }
+
+    button.menu-btn {
+        color: #000;
+        text-align: center;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        padding: 10px 20px;
+        border-radius: 14px;
+        border: 1px solid #191A23;
+        background-color: white;
+        cursor: pointer;
+    }
+    .menu-btn a{
+        color: #000;
+    }
+
+    button.menu-btn:hover {
+        color: #5d5b5b;
+        background-color: rgb(244, 244, 244);
+    }
+
+    /* hero section */
+
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero-text h1 {
+        width: 370px;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size:27px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-text p {
+        width: 370px;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        padding: 10px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-text button {
+        display: flex;
+        width: 370px;
+        padding: 20px 35px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 14px;
+        background: #191A23;
+        color: #FFF;
+        text-align: center;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    .bbh a{
+        color: #FFF;
+    }
+
+    .hero-img img {
+        width: 361px;
+        height: 310px;
+        padding: 0px 34px;
+        border-radius: 50%;
+    }
+
+    /* company logo */
+    .company-logo {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* service section */
+    .service {
+        display: flex;
+        padding: 30px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .service h2 {
+        color: #000;
+        background-color: #B9FF66;
+        font-family: "Space Grotesk";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .service p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 370px;
+        color: #000;
+        text-align: center;
+        font-family: "Space Grotesk";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+
+    }
+
+
+    /* card section */
+
+    .cards {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 20px;
+        padding: 30px;
+        flex-wrap: wrap;
+
+    }
+
+    .single-card {
+        width: 340px;
+        height: 272px;
+        padding: 30px;
+        border-radius: 45px;
+        border: 1px solid #191A23;
+        background: #F3F3F3;
+        box-shadow: 0px 5px 0px 0px #191A23;
+    }
+
+    .single-card h3 {
+        width: 180px;
+        height: 33px;
+        color: #000;
+        background-color: #B9FF66;
+        font-family: "Space Grotesk";
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border-radius: 5px;
+    }
+
+    .card-img {
+        width: 165px;
+        height: 129px;
+        flex-shrink: 0;
+        float: right;
+        top: 0px;
+        right: -15px;
+        z-index: 99;
+        position: relative;
+    }
+
+    .single-card p span img {
+        width: 41px;
+        height: 41px;
+    }
+
+    .hide-p {
+        display: none;
+    }
+
+    .single-card p {
+        cursor: pointer;
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+
+    h3.c1-h3-2 {
+        width: 158px;
+    }
+
+    h3.c2-h3-1 {
+        width: 169px;
+        background-color: #FFFFFF;
+    }
+
+    h3.c2-h3-2 {
+        width: 142px;
+        background-color: #FFFFFF;
+    }
+
+    h3.c3-h3-1 {
+        width: 159px;
+        background-color: #FFFFFF;
+    }
+
+    h3.c3-h3-2 {
+        width: 128px;
+        background-color: #FFFFFF;
+    }
+
+    h3.c4-h3-1 {
+        width: 66px;
+    }
+
+    h3.c4-h3-2 {
+        width: 128px;
+    }
+
+    h3.c5-h3-1 {
+        width: 103px;
+        background-color: #FFFFFF;
+    }
+
+    h3.c5-h3-2 {
+        width: 107px;
+        background-color: #FFFFFF;
+    }
+
+    h3.c6-h3-1 {
+        width: 172px;
+        background-color: #B9FF66;
+    }
+
+    h3.c6-h3-2 {
+        width: 107px;
+        background-color: #B9FF66;
+    }
+
+
+    /* promo card */
+    .promo-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .promo-text {
+        width: 390px;
+        height: 370px;
+        display: flex;
+        padding: 50px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        border-radius: 45px;
+        background: #F3F3F3;
+    }
+
+    .promo-img {
+        display: none;
+    }
+
+    .promo-text h2 {
+        width: 270px;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .promo-text p {
+        width: 270px;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .promo-text button {
+        display: flex;
+        width: 270px;
+        padding: 15px 15px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 14px;
+        background: #191A23;
+        color: #FFF;
+        text-align: center;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    /* Case Studies */
+    .Case-Study {
+        display: flex;
+        padding: 0px 30px;
+        margin: 30px 0px;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .Case-Study h3 {
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border-radius: 7px;
+        background: #B9FF66;
+        padding: 7px;
+    }
+
+    .Case-Study p {
+        width: 390px;
+        flex-shrink: 0;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .cs-hide {
+        display: none;
+    }
+
+    .cs-c {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0px;
+    }
+
+    .cs-card {
+        width: 350px;
+        height: 252px;
+        display: flex;
+        padding: 42px 50px;
+        align-items: flex-start;
+        gap: 64px;
+        border-radius: 45px;
+        background: #191A23;
+    }
+
+    .cs-single-card p {
+        width: 250px;
+        color: #FFF;
+        font-family: "Space Grotesk";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .cs-single-card h4 {
+        color: #B9FF66;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    .cs-single-card img {
+        width: 17.321px;
+        height: 10px;
+    }
+
+    /* working section */
+    .work {
+        display: flex;
+        justify-content: center;
+        align-items: center1;
+        padding-bottom: 100px;
+    }
+
+    .work-head {
+        display: flex;
+        flex-direction: column;
+        width: 430px;
+        height: 175px;
+        padding: 0px 20px;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    h2.desktop {
+        display: none;
+        visibility: hidden;
+    }
+
+    .work-head h2 {
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .h2-1 {
+        width: 226px;
+        height: 51px;
+        background-color: #B9FF66;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .h2-2 {
+        width: 153px;
+        height: 51px;
+        background-color: #B9FF66;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .work-head p {
+        width: 370px;
+        flex-shrink: 0;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    /* FAQ Section  */
+
+    .work-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .work-card {
+        display: inline-flex;
+        padding: 0px 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .work-single-card,
+    .work-single-card2,
+    .work-single-card3,
+    .work-single-card4,
+    .work-single-card5,
+    .work-single-card6 {
+        display: flex;
+        width: 390px;
+        padding: 20px 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        border-radius: 45px;
+        border: 1px solid #191A23;
+        background: #F3F3F3;
+        box-shadow: 0px 5px 0px 0px #191A23;
+    }
+
+    .fold-head {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .fold-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .fold-text h4 {
+        width: 270px;
+    }
+
+    .fold-text h1 {
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    #minus,
+    #minus2,
+    #minus3,
+    #minus4,
+    #minus5,
+    #minus6 {
+        visibility: hidden;
+        display: none;
+    }
+
+    .fold_hide,
+    .fold_hide2,
+    .fold_hide3,
+    .fold_hide4,
+    .fold_hide5,
+    .fold_hide6 {
+        visibility: hidden;
+        display: none;
+    }
+
+    .fold_hide hr,
+    .fold_hide2 hr,
+    .fold_hide3 hr,
+    .fold_hide4 hr,
+    .fold_hide5 hr,
+    .fold_hide6 hr {
+        border: 1px solid black;
+        margin: 10px 0px;
+    }
+
+    .fold_hide p,
+    .fold_hide2 p,
+    .fold_hide3 p,
+    .fold_hide4 p,
+    .fold_hide5 p,
+    .fold_hide6 p {
+        width: 370px;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+    }
+
+
+
+    /* Team Section */
+    .team-head-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 0px;
+    }
+
+    .team-header {
+        display: flex;
+        padding: 0px 30px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .team-header h2 {
+        width: 111px;
+        height: 51px;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        background-color: #B9FF66;
+        border-radius: 5px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team-header p {
+        width: 370px;
+        flex-shrink: 0;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+
+    /* Team card Section */
+
+    .team-card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        padding: 0px 30px;
+        width: 98%;
+    }
+    .team-card-iteam {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-self: center;
+        gap: 30px;
+        color: #000;
+    }
+    
+    .single-team-member {
+        display: flex;
+        width: 370px;
+        padding: 40px 35px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 45px;
+        border: 1px solid #191A23;
+        background: #FFF;
+        box-shadow: 0px 5px 0px 0px #191A23;
+    }
+    
+    .team-member-profile {
+        display: flex;
+    }
+    
+    .profile-up {
+        display: flex;
+        padding-right: 76px;
+        align-items: flex-end;
+        gap: 20px;
+    }
+    
+    .profile-name h4 {
+        width: 90px;
+        height: 26px;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    
+    .profile-name p {
+        width: 194px;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    
+    }
+    
+    .social-icon img {
+        position: relative;
+        left: -100px;
+    }
+    
+    .team-member-dtls hr {
+        border: 1px solid #000;
+        margin: 20px 0px;
+    }
+    
+    .team-member-dtls p {
+        width: 317px;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    /* Testimonial */
+
+    .testimonial {
+        width: 430px;
+        padding: 0px 30px;
+        gap: 20px;
+        margin: 50px 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .testimonial h2 {
+        width: 230px;
+        height: 46px;
+        color: #000;
+        background-color: #B9FF66;
+        font-family: "Space Grotesk";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border-radius: 7px;
+        padding: 0px 7px;
+    }
+
+    .testimonial p {
+        width: 370px;
+        flex-shrink: 0;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    /* tolltip */
+
+
+    .tooltip {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .toltip-main {
+        width: 390px;
+        height: 480px;
+        display: flex;
+        padding: 30px 30px 60px 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        border-radius: 45px;
+        background: #191A23;
+    }
+
+    /* left */
+    .comment-para p {
+        width: 270px;
+        color: #FFF;
+        font-family: "Space Grotesk";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        line-height: normal;
+        position: absolute;
+        z-index: 1;
+        outline: 1px solid #B9FF66;
+        margin-top: 50px;
+        margin-left: 30px;
+        border-radius: 30px;
+        padding: 20px;
+    }
+
+    .comment-para p::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -55px;
+        border-width: 15px;
+        border-style: solid;
+        border-color: #B9FF66 transparent transparent transparent;
+        margin-left: -38%;
+
+    }
+
+    .comment-parson {
+        position: absolute;
+        margin-left: 60px;
+        margin-top: 365px;
+        width: 251px;
+    }
+
+    .comment-parson h4 {
+        color: #B9FF66;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .comment-parson p {
+        color: #FFF;
+        font-family: "Space Grotesk";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .single-comment2 {
+        display: none;
+        visibility: hidden;
+    }
+
+    /* Contact section */
+
+    .contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-head {
+        width: 430px;
+        padding: 0px 30px;
+        gap: 20px;
+        margin: 50px 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-head h2 {
+        width: 230px;
+        height: 46px;
+        color: #000;
+        background-color: #B9FF66;
+        font-family: "Space Grotesk";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border-radius: 7px;
+        padding: 0px 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-head p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 370px;
+        flex-shrink: 0;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    /* cotact form */
+
+
+    .forms-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+
+    .cotact-form {
+        display: inline-flex;
+        padding: 40px 40px;
+        flex-direction: column;
+        align-items: center;
+        gap: 36px;
+        border-radius: 45px;
+        background: #F3F3F3;
+    }
+
+    .container {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-left: 40px;
+
+
+
+    }
+
+    label {
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+
+    input#SayHi,
+    input#GetaQuote {
+        width: 28px;
+        height: 28px;
+        flex-shrink: 0;
+        border-radius: 29px;
+        border: 1px solid #000;
+        background: #FFF;
+        margin-left: 10px;
+        accent-color:  #B9FF66;
+    }
+
+
+    input#Name {
+        display: flex;
+        width: 330px;
+        padding: 18px 20px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 14px;
+        border: 1px solid #000;
+        background: #FFF;
+    }
+
+    input#Email {
+        display: flex;
+        width: 330px;
+        padding: 18px 20px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 14px;
+        border: 1px solid #000;
+        background: #FFF;
+    }
+
+    textarea#Message {
+        display: flex;
+        width: 330px;
+        height: 132px;
+        padding: 18px 20px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 14px;
+        border: 1px solid #000;
+        background: #FFF;
+    }
+
+    button.form-btn {
+        display: none;
+        visibility: hidden;
+    }
+
+    button.form-btn2 {
+        display: flex;
+        width: 390px;
+        padding: 20px 35px;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 14px;
+        background: #191A23;
+        color: #FFF;
+        text-align: center;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+
+    }
+
+    .bg-img {
+        display: none;
+        visibility: hidden;
+    }
+
+    .bg-img img {
+        width: 691.57px;
+        height: 648px;
+        flex-shrink: 0;
+
+    }
+
+    /* footer */
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-footer-container {
+        width: 430px;
+        height: 946px;
+        display: flex;
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        border-radius: 45px 45px 0px 0px;
+        background: #191A23;
+        margin-top: 100px;
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+
+    }
+
+    .footer-nav ul {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .footer-nav ul li {
+        list-style: none;
+    }
+
+    .footer-nav ul li a {
+        color: #FFF;
+        text-align: center;
+        font-family: "Space Grotesk";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        text-decoration-line: none;
+    }
+    .social-iconss{
+        visibility: hidden;
+        display: none;
+    }
+    .social-iconss2 {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .social-iconss img:hover {
+        cursor: pointer;
+    }
+
+
+    .footer-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contact-address {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 27px;
+        width: 295px;
+        height: 210px;
+    }
+
+    .contact-address h4 {
+        width: 200px;
+        height: 23px;
+        color: #000;
+        background-color: #B9FF66;
+        border-radius: 5px;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .contact-address p {
+        width: 295px;
+        height: 40px;
+        color: #FFF;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .subscriton-side {
+        width: 390px;
+        height: 216px;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        align-items: flex-start;
+        gap: 22px;
+        border-radius: 14px;
+        background: #292A32;
+    }
+
+    input.subs {
+        display: flex;
+        width: 330px;
+        padding: 21px 25px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 14px;
+        border: 1px solid #FFF;
+        color: #FFF;
+        font-family: "Space Grotesk";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    button.sub-btn {
+        display: flex;
+        padding: 20px 35px;
+        align-items: center;
+        gap: 10px;
+        border-radius: 14px;
+        background: #B9FF66;
+        color: #000;
+        text-align: center;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        width: 330px;
+        height: 68px;
+        cursor: pointer;
+    }
+
+    .hr hr {
+        width: 390px;
+        height: 1px;
+    }
+
+    .footer-p {
+        display: inline-flex;
+        padding: 20px 20px 30px 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .footer-p p {
+        color: #FFF;
+        font-family: "Space Grotesk";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .footer-p a {
+        color: #FFF;
+        font-family: "Space Grotesk";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        text-decoration-line: none;
+    }
+
+
+
+}
+
+
+
+/* for Tablet device */
+/* --------------------------- */
+@media screen and ( min-width:601px) and (max-width:900px) {
+
+    /* menu/nav */
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 20px;
+        width: 100%;
+
+    }
+
+    .menu ul {
+        color: #000;
+        font-family: "Space Grotesk";
+        visibility: hidden;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgb(242, 241, 241);
+        list-style: none;
+        padding: 10px;
+        margin-right: 20px;
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+    }
+
+    .menu ul.active,
+    .uncheck.active {
+        display: block;
+        visibility: visible;
+    }
+
+    .uncheck {
+        display: none;
+        visibility: hidden;
+        color: white;
+    }
+
+    .check img {
+        padding-right: 10px;
+        cursor: pointer;
+    }
+
+    .close {
+        top: 0;
+        right: 10px;
+        position: absolute;
+    }
+
+    .menu ul li {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    .menu ul li a:hover {
+        color: #5d5b5b;
+        border-bottom: 2px solid #615f5f;
+        ;
+    }
+
+    button.menu-btn {
+        color: #000;
+        text-align: center;
+        font-family: "Space Grotesk";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        padding: 15px 30px;
+        border-radius: 14px;
+        border: 1px solid #191A23;
+        background-color: white;
+        cursor: pointer;
+    }
+    .menu-btn a{
+        color: #000;
+    }
+
+    button.menu-btn:hover {
+        color: #5d5b5b;
+        background-color: rgb(244, 244, 244);
+    }
+
+    /* hero section */
+
+    .hero-section {
+        display: flex;
+        flex-direction: row;
+        padding: 50px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero-text{
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        width: 270px;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .hero-text p {
+        width: 270px;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 10px 0px;
+    }
+
+    .hero-text button {
+        display: flex;
+        width: 270px;
+        padding: 20px 25px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 14px;
+        background: #191A23;
+        color: #FFF;
+        text-align: center;
+        font-family: "Space Grotesk";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .bbh a{
+        color: #FFF;
+    }
+
+    .hero-img img {
+        width: 450px;
+        height: 350px;
+        padding: 0px 34px;
+        border-radius: 50%;
+    }
+
+    /* company logo */
+    .company-logo {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        padding: 40px;
+    }
+
+    /* service section */
+    .service {
+        display: flex;
+        padding: 40px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .service h2 {
+        color: #000;
+        background-color: #B9FF66;
+        font-family: "Space Grotesk";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .service p {
+        width: 370px;
+        color: #000;
+        text-align: center;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+    }
+
+
+    /* card section */
+
+    .cards {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 20px;
+        padding: 30px;
+        flex-wrap: wrap;
+
+    }
+
+    .single-card {
+        width: 340px;
+        height: 272px;
+        padding: 30px;
+        border-radius: 45px;
+        border: 1px solid #191A23;
+        background: #F3F3F3;
+        box-shadow: 0px 5px 0px 0px #191A23;
+    }
+
+    .single-card h3 {
+        width: 180px;
+        height: 33px;
+        color: #000;
+        background-color: #B9FF66;
+        font-family: "Space Grotesk";
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border-radius: 5px;
+    }
+
+    .card-img {
+        width: 165px;
+        height: 129px;
+        flex-shrink: 0;
+        float: right;
+        top: 0px;
+        right: -15px;
+        z-index: 99;
+        position: relative;
+    }
+
+    .single-card p span img {
+        width: 41px;
+        height: 41px;
+    }
+
+    .hide-p {
+        display: none;
+    }
+
+    .single-card p {
+        cursor: pointer;
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+
+    h3.c1-h3-2 {
+        width: 158px;
+    }
+
+    h3.c2-h3-1 {
+        width: 169px;
+        background-color: #FFFFFF;
+    }
+
+    h3.c2-h3-2 {
+        width: 142px;
+        background-color: #FFFFFF;
+    }
+
+    h3.c3-h3-1 {
+        width: 159px;
+        background-color: #FFFFFF;
+    }
+
+    h3.c3-h3-2 {
+        width: 128px;
+        background-color: #FFFFFF;
+    }
+
+    h3.c4-h3-1 {
+        width: 66px;
+    }
+
+    h3.c4-h3-2 {
+        width: 128px;
+    }
+
+    h3.c5-h3-1 {
+        width: 103px;
+        background-color: #FFFFFF;
+    }
+
+    h3.c5-h3-2 {
+        width: 107px;
+        background-color: #FFFFFF;
+    }
+
+    h3.c6-h3-1 {
+        width: 172px;
+        background-color: #B9FF66;
+    }
+
+    h3.c6-h3-2 {
+        width: 107px;
+        background-color: #B9FF66;
+    }
+
+
+    /* promo card */
+    .promo-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        flex-direction: row;
+    }
+    .promo-card{
+        display: flex;
+        justify-content: space-between;
+        background: #F3F3F3;
+        width:95%;
+        height: 370px;
+        border-radius: 20px;
+
+    }
+    .promo-text {
+        display: flex;
+        padding: 50px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        border-radius: 45px;
+        
+    }
+
+    .promo-img img{
+        width: 350px;
+        height: 350px;
+        margin-left: 100px;
+    }
+
+    .promo-text h2 {
+        width: 270px;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .promo-text p {
+        width: 270px;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .promo-text button {
+        display: flex;
+        width: 270px;
+        padding: 20px 15px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 14px;
+        background: #191A23;
+        color: #FFF;
+        text-align: center;
+        font-family: "Space Grotesk";
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        line-height:normal;
+        cursor: pointer;
+    }
+
+    /* Case Studies */
+    .Case-Study {
+        display: flex;
+        padding: 0px 30px;
+        margin: 30px 0px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .Case-Study h3 {
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 10px;
+        background: #B9FF66;
+        padding: 10px;
+    }
+
+    .Case-Study p {
+        width: 390px;
+        flex-shrink: 0;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .cs-hide1 {
+        display: none;
+        visibility: hidden;
+    }
+    .cs-border-rh{
+        border-right: 2px solid white;
+        padding-right: 15px;
+    }
+
+    .cs-c {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0px;
+    }
+
+    .cs-card {
+        width: 95%;
+        height: 252px;
+        display: flex;
+        padding: 42px 50px;
+        align-items: center;
+        justify-content: center;
+        gap: 64px;
+        border-radius: 45px;
+        background: #191A23;
+    }
+
+    .cs-single-card p {
+        width: 250px;
+        color: #FFF;
+        font-family: "Space Grotesk";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .cs-single-card h4 {
+        color: #B9FF66;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    .cs-single-card img {
+        width: 17.321px;
+        height: 10px;
+    }
+
+    /* working section */
+    .work {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 100px;
+    }
+
+    .work-head {
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        height: 175px;
+        padding: 0px 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+
+    .work-head h2 {
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        background-color: #B9FF66;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    h2.mobile {
+        display: none;
+        visibility: hidden;
+    }
+
+    .work-head p {
+        width: 370px;
+        flex-shrink: 0;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    /* FAQ Section  */
+
+    .work-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .work-card {
+        width: 100%;
+        display: inline-flex;
+        padding: 30px 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .work-single-card,
+    .work-single-card2,
+    .work-single-card3,
+    .work-single-card4,
+    .work-single-card5,
+    .work-single-card6 {
+        display: flex;
+        width: 100%;
+        padding: 20px 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        border-radius: 45px;
+        border: 1px solid #191A23;
+        background: #F3F3F3;
+        box-shadow: 0px 5px 0px 0px #191A23;
+    }
+
+    .fold-head {
+        display: flex;
+        justify-content: space-around;
+        gap: 250px;
+        width: 100%;
+    }
+
+    .fold-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .fold-text h4 {
+        width: 270px;
+    }
+
+    .fold-text h1 {
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    #minus,
+    #minus2,
+    #minus3,
+    #minus4,
+    #minus5,
+    #minus6 {
+        visibility: hidden;
+        display: none;
+    }
+
+    .fold_hide,
+    .fold_hide2,
+    .fold_hide3,
+    .fold_hide4,
+    .fold_hide5,
+    .fold_hide6 {
+        visibility: hidden;
+        display: none;
+    }
+
+    .fold_hide hr,
+    .fold_hide2 hr,
+    .fold_hide3 hr,
+    .fold_hide4 hr,
+    .fold_hide5 hr,
+    .fold_hide6 hr {
+        border: 1px solid black;
+        margin: 20px 0px;
+        width:600px;
+    }
+
+    .fold_hide p,
+    .fold_hide2 p,
+    .fold_hide3 p,
+    .fold_hide4 p,
+    .fold_hide5 p,
+    .fold_hide6 p {
+        width: 600px;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+    }
+
+
+
+    /* Team Section */
+    .team-head-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 70px 0px;
+    }
+
+    .team-header {
+        display: flex;
+        padding: 0px 30px;
+        align-items: center;
+        justify-content: center;
+        flex-direction:row;
+        gap: 50px;
+
+    }
+
+    .team-header h2 {
+        width: 111px;
+        height: 51px;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        background-color: #B9FF66;
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team-header p {
+        width: 370px;
+        flex-shrink: 0;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+
+/* Team card Section */
+
+.team-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110%;
+    padding: 20px;
+}
+.team-card-iteam {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-self: center;
+    gap: 20px;
+    color: #000;
+    width: 95%;
+    overflow: hidden;
+
+}
+
+.single-team-member {
+    display: flex;
+    width: 350px;
+    padding: 20px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 45px;
+    border: 1px solid #191A23;
+    background: #FFF;
+    box-shadow: 0px 5px 0px 0px #191A23;
+}
+
+.team-member-profile {
+    display: flex;
+}
+
+.profile-up {
+    display: flex;
+    padding-right: 76px;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.profile-name h4 {
+    width: 90px;
+    height: 26px;
+    color: #000;
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.profile-name p {
+    width: 194px;
+    color: #000;
+    font-family: "Space Grotesk";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.social-icon img {
+    position: relative;
+    left: -100px;
+}
+
+.team-member-dtls hr {
+    border: 1px solid #000;
+    margin: 20px 0px;
+}
+
+.team-member-dtls p {
+    width: 317px;
+    color: #000;
+    font-family: "Space Grotesk";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+    /* Testimonial */
+
+    .testimonial {
+        width: 100%;
+        padding: 0px 30px;
+        gap: 20px;
+        margin: 50px 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .testimonial h2 {
+        width: 230px;
+        height: 46px;
+        color: #000;
+        background-color: #B9FF66;
+        font-family: "Space Grotesk";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border-radius:10px;
+        padding: 0px 10px;
+    }
+
+    .testimonial p {
+        width: 370px;
+        flex-shrink: 0;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+
+    /* tolltip */
+
+
+    .tooltip {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .toltip-main {
+        width: 100%;
+        height: 500px;
+        display: inline-flex;
+        padding: 20px 20px 20px px;
+        align-items: center;
+        border-radius: 45px;
+        background: #191A23;
+    }
+
+    /* left */
+    .comment-para p {
+        width: 300px;
+        color: #FFF;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position: absolute;
+        z-index: 1;
+        outline: 1px solid #B9FF66;
+        margin-top: -200px;
+        margin-left: 50px;
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    .comment-para p::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -55px;
+        border-width: 20px;
+        border-style: solid;
+        border-color: #B9FF66 transparent transparent transparent;
+        margin-left: -42%;
+
+    }
+
+    .comment-parson {
+        position: absolute;
+        margin-left: 70px;
+        margin-top: 150px;
+        width: 300px;
+    }
+
+    .comment-parson h4 {
+        color: #B9FF66;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .comment-parson p {
+        color: #FFF;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+
+    /* right */
+
+    .comment-para2 p {
+        width: 300px;
+        color: #FFF;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position: absolute;
+        z-index: 2;
+        outline: 1px solid #B9FF66;
+        margin-top: -200px;
+        right: 80px;
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    .comment-para2 p::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -55px;
+        border-width: 20px;
+        border-style: solid;
+        border-color: #B9FF66 transparent transparent transparent;
+        margin-left: -42%;
+
+    }
+
+    .comment-parson2 {
+        position: absolute;
+        right: 70px;
+        margin-top: 150px;
+        width: 300px;
+    }
+
+    .comment-parson2 h4 {
+        color: #B9FF66;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .comment-parson2 p {
+        color: #FFF;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+
+    
+    /* Contact section */
+
+    .contact-head {
+        width:100%;
+        padding: 0px 30px;
+        gap: 20px;
+        margin: 50px 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-head h2 {
+        width: 230px;
+        height: 46px;
+        color: #000;
+        background-color: #B9FF66;
+        font-family: "Space Grotesk";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 10px;
+        padding: 0px 10px;
+    }
+
+    .contact-head p {
+        width: 370px;
+        flex-shrink: 0;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal}
+
+    /* cotact form */
+
+
+    .forms-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+
+    .cotact-form {
+        display: inline-flex;
+        padding: 40px 40px;
+        flex-direction: column;
+        align-items: center;
+        gap: 36px;
+        border-radius: 45px;
+        background: #F3F3F3;
+        width: 100%;
+    }
+
+    .container {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-left: 40px;
+
+
+
+    }
+
+    label {
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+
+    input#SayHi,
+    input#GetaQuote {
+        width: 35px;
+        height: 35px;
+        flex-shrink: 0;
+        border-radius: 29px;
+        border: 1px solid #000;
+        background: #FFF;
+        margin-left: 10px;
+        accent-color:  #B9FF66;
+    }
+
+
+    input#Name {
+        display: flex;
+        width: 600px;
+        padding: 25px 30px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 14px;
+        border: 1px solid #000;
+        background: #FFF;
+    }
+
+    input#Email {
+        display: flex;
+        width: 600px;
+        padding: 25px 30px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 14px;
+        border: 1px solid #000;
+        background: #FFF;
+    }
+
+    textarea#Message {
+        display: flex;
+        width: 600px;
+        height: 300px;
+        padding: 25px 30px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 14px;
+        border: 1px solid #000;
+        background: #FFF;
+    }
+
+    button.form-btn {
+        display: none;
+        visibility: hidden;
+    }
+
+    button.form-btn2 {
+        display: flex;
+        width: 95%;
+        padding: 20px 35px;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 20px;
+        background: #191A23;
+        color: #FFF;
+        text-align: center;
+        font-family: "Space Grotesk";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+
+    }
+
+    .bg-img {
+        display: none;
+        visibility: hidden;
+    }
+
+    .bg-img img {
+        width: 691.57px;
+        height: 648px;
+        flex-shrink: 0;
+
+    }
+
+    /* footer */
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-footer-container {
+        width:90%;
+        height: 946px;
+        display: flex;
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        border-radius: 45px 45px 0px 0px;
+        background: #191A23;
+        margin-top: 100px;
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+
+    }
+
+    .footer-nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+    }
+
+    .footer-nav ul li {
+        list-style: none;
+    }
+
+    .footer-nav ul li a {
+        color: #FFF;
+        text-align: center;
+        font-family: "Space Grotesk";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        text-decoration-line: none;
+    }
+    .social-iconss{
+        visibility: hidden;
+        display: none;
+    }
+    .social-iconss2 {
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+        padding: 30px;
+    }
+
+    .social-iconss img:hover {
+        cursor: pointer;
+    }
+
+
+    .footer-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contact-address {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 27px;
+        width: 295px;
+        height: 210px;
+    }
+
+    .contact-address h4 {
+        width: 300px;
+        height: 38px;
+        color: #000;
+        background-color: #B9FF66;
+        border-radius: 5px;
+        font-family: "Space Grotesk";
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .contact-address p {
+        width: 295px;
+        height: 40px;
+        color: #FFF;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .subscriton-side {
+        width: 600px;
+        height: 216px;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        align-items:center;
+        gap: 22px;
+        border-radius: 14px;
+        background: #292A32;
+    }
+
+    input.subs {
+        display: flex;
+        width: 100%;
+        padding: 21px 25px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 14px;
+        border: 1px solid #FFF;
+        color: #FFF;
+        font-family: "Space Grotesk";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    button.sub-btn {
+        display: flex;
+        padding: 20px 35px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 14px;
+        background: #B9FF66;
+        color: #000;
+        text-align: center;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        width: 330px;
+        height: 68px;
+        cursor: pointer;
+    }
+
+    .hr hr {
+        width: 600px;
+        height: 1px;
+    }
+
+    .footer-p {
+        display: inline-flex;
+        padding: 20px 20px 30px 20px;
+        flex-direction: row;
+        align-items:center;
+        gap: 20px;
+        margin-top: 80px;
+    }
+
+    .footer-p p {
+        color: #FFF;
+        font-family: "Space Grotesk";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .footer-p a {
+        color: #FFF;
+        font-family: "Space Grotesk";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        text-decoration-line: none;
+    }
+
+
+
+}
+
+/* ------------------------- */
+/* for desktop */
+/* ------------------------- */
+
+@media screen and (min-width:901px)  {
+
+    /* nav/menu */
+
+    .check {
+        display: none;
+        visibility: hidden;
+    }
+
+    .close {
+        visibility: hidden;
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1330px;
+        padding: 30px 70px;
+    }
+
+    .menu ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-direction: row;
+    }
+
+    .menu ul li,
+    .footer-nav ul li {
+        list-style: none;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    .menu ul li a:hover {
+        color: #5d5b5b;
+        border-bottom: 2px solid #615f5f;
+        ;
+    }
+
+    button.menu-btn  {
+        color: #000;
+        text-align: center;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        display: flex;
+        padding: 10px 20px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 14px;
+        border: 1px solid #191A23;
+        background-color: white;
+    }
+    .menu-btn a{
+        color: #000;
+    }
+    
+
+    button.menu-btn:hover {
+        color: #5d5b5b;
+        background-color: rgb(244, 244, 244);
+
+
+    }
+
+    /* hero section */
+    .hero-section {
+        padding: 70px 70px;
+    }
+
+    .hero-text h1 {
+        width: 531px;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .hero-text p {
+        width: 498px;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        padding: 35px 0px;
+    }
+
+    .hero-text button {
+        display: flex;
+        padding: 20px 35px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 14px;
+        background: #191A23;
+        color: #FFF;
+        text-align: center;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    .bbh a{
+        color: #FFF;
+    }
+
+    .hero-img {
+        width: 600.462px;
+        height: 515px;
+        flex-shrink: 0;
+    }
+    .hero-img img {
+        width: 600px;
+        height: 500px;
+        padding: 0px 34px;
+        border-radius: 50%;
+    }
+
+    /* company logo */
+    .company-logo {
+        display: flex;
+        width: 100%;
+        padding: 0px 70px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    /* service-section */
+    .service {
+        display: flex;
+        width: 1330px;
+        padding: 50px 70px;
+        align-items: center;
+        justify-content: start;
+        gap: 40px;
+    }
+
+    .service h2 {
+        color: #000;
+        background-color: #B9FF66;
+        font-family: "Space Grotesk";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .service p {
+        width: 580px;
+        flex-shrink: 0;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    /* card section */
+
+    .cards {
+        display: flex;
+        padding: 0px 70px;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 40px;
+        padding: 20px 20px;
+        flex-wrap: wrap;
+    }
+
+    .single-card {
+        width: 530px;
+        padding: 30px;
+        border-radius: 45px;
+        border: 1px solid #191A23;
+        background: #F3F3F3;
+        box-shadow: 0px 5px 0px 0px #191A23;
+    }
+
+    .single-card h3 {
+        width: 207px;
+        height: 38px;
+        color: #000;
+        background-color: #B9FF66;
+        font-family: "Space Grotesk";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border-radius: 5px;
+    }
+
+    .card-img {
+        width: 210px;
+        height: 166.047px;
+        flex-shrink: 0;
+        float: right;
+        top: -20px;
+        right: -5px;
+        z-index: 99;
+        position: relative;
+    }
+
+    .single-card p span img {
+        width: 41px;
+        height: 41px;
+    }
+
+    .single-card p {
+        cursor: pointer;
+        padding-top: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 15px;
+        color: var(--Black, #000);
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    h3.c1-h3-2 {
+        width: 183px;
+    }
+
+    h3.c2-h3-1 {
+        background-color: #FFFFFF;
+    }
+
+    h3.c2-h3-2 {
+        width: 183px;
+        background-color: #FFFFFF;
+    }
+
+    h3.c3-h3-1 {
+        background-color: #FFFFFF;
+    }
+
+    h3.c3-h3-2 {
+        width: 183px;
+        background-color: #FFFFFF;
+    }
+
+    h3.c4-h3-1 {
+        width: 76px;
+    }
+
+    h3.c4-h3-2 {
+        width: 147px;
+    }
+
+    h3.c5-h3-1 {
+        width: 119px;
+        background-color: #FFFFFF;
+    }
+
+    h3.c5-h3-2 {
+        width: 123px;
+        background-color: #FFFFFF;
+    }
+
+    h3.c6-h3-1 {
+        width: 199px;
+        background-color: #B9FF66;
+    }
+
+    h3.c6-h3-2 {
+        width: 124px;
+        background-color: #B9FF66;
+    }
+
+    /* promo card */
+    .promo-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 70px 0px;
+    }
+
+    .promo-card {
+        display: flex;
+        width: 1240px;
+        height: 347px;
+        padding: 0px 60px;
+        align-items: center;
+        /* justify-content: space-around; */
+        gap: 275px;
+        flex-shrink: 0;
+        border-radius: 45px;
+        background: #F3F3F3;
+    }
+
+    .promo-text h2 {
+        width: 500px;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .promo-text p {
+        width: 500px;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 20px 0px;
+    }
+
+    .promo-text button {
+        display: flex;
+        padding: 20px 35px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 14px;
+        background: #191A23;
+        color: #FFF;
+        text-align: center;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        cursor: pointer;
+    }
+
+
+    /* Case Studies */
+    .Case-Study {
+        display: flex;
+        width: 100%;
+        padding: 0px 70px;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .Case-Study h3 {
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border-radius: 7px;
+        background: #B9FF66;
+        padding: 10px;
+    }
+
+    .Case-Study p {
+        width: 580px;
+        flex-shrink: 0;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+
+    .cs-c {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0px;
+    }
+
+    .cs-card {
+        width: 1200px;
+        height: 326px;
+        display: flex;
+        padding: 70px 60px;
+        align-items: flex-start;
+        gap: 64px;
+        border-radius: 45px;
+        background: #191A23;
+    }
+
+    .cs-single-card p {
+        width: 286px;
+        color: #FFF;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .cs-single-card h4 {
+        color: #B9FF66;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    .cs-single-card img {
+        width: 17.321px;
+        height: 10px;
+    }
+
+    .card-border {
+        border-left: 1px solid #FFFFFF;
+        border-right: 1px solid #FFFFFF;
+        padding: 0px 40px;
+    }
+
+
+    /* working section */
+    .work-head {
+        display: flex;
+        width: 100%;
+        padding: 0px 70px;
+        align-items: center;
+        gap: 40px;
+        margin: 100px 0px;
+    }
+
+    h2.mobile {
+        visibility: hidden;
+        display: none;
+    }
+
+    .work-head h2 {
+        color: #000;
+        background-color: #B9FF66;
+        font-family: "Space Grotesk";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .work-head p {
+        width: 292px;
+        flex-shrink: 0;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+
+
+    /* FAQ Section  */
+
+    .work-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .work-card {
+        display: inline-flex;
+        padding: 0px 70px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .work-single-card,
+    .work-single-card2,
+    .work-single-card3,
+    .work-single-card4,
+    .work-single-card5,
+    .work-single-card6 {
+        display: flex;
+        width: 1234px;
+        padding: 41px 60px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        border-radius: 45px;
+        border: 1px solid #191A23;
+        background: #F3F3F3;
+        box-shadow: 0px 5px 0px 0px #191A23;
+    }
+
+    .fold-head {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .fold-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .fold-text h4 {
+        width: 912px;
+    }
+
+    .fold-text h1 {
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    #minus,
+    #minus2,
+    #minus3,
+    #minus4,
+    #minus5,
+    #minus6 {
+        visibility: hidden;
+        display: none;
+    }
+
+    .fold_hide,
+    .fold_hide2,
+    .fold_hide3,
+    .fold_hide4,
+    .fold_hide5,
+    .fold_hide6 {
+        visibility: hidden;
+        display: none;
+    }
+
+    .fold_hide hr,
+    .fold_hide2 hr,
+    .fold_hide3 hr,
+    .fold_hide4 hr,
+    .fold_hide5 hr,
+    .fold_hide6 hr {
+        border: 1px solid black;
+        margin: 40px 0px;
+    }
+
+    .fold_hide p,
+    .fold_hide2 p,
+    .fold_hide3 p,
+    .fold_hide4 p,
+    .fold_hide5 p,
+    .fold_hide6 p {
+        width: 1114px;
+        height: 60px;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+
+    /* Team Section */
+    .team-head-container {
+        display: flex;
+        align-items: flex-start;
+        margin: 40px 0px;
+    }
+
+    .team-header {
+        display: flex;
+        width: 1330px;
+        padding: 0px 70px;
+        align-items: flex-start;
+        gap: 40px;
+
+    }
+
+    .team-header h2 {
+        width: 111px;
+        height: 51px;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        background-color: #B9FF66;
+        border-radius: 5px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team-header p {
+        width: 473px;
+        flex-shrink: 0;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    /* Team card Section */
+
+    .team-card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        padding: 0px 30px;
+        width: 100%;
+    }
+
+
+
+.team-card-iteam {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-self: center;
+    gap: 15px;
+    color: #000;
+    width: 95%;
+}
+
+.single-team-member {
+    display: flex;
+    width: 370px;
+    padding: 40px 35px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 45px;
+    border: 1px solid #191A23;
+    background: #FFF;
+    box-shadow: 0px 5px 0px 0px #191A23;
+}
+
+.team-member-profile {
+    display: flex;
+}
+
+.profile-up {
+    display: flex;
+    padding-right: 76px;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.profile-name h4 {
+    width: 90px;
+    height: 26px;
+    color: #000;
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.profile-name p {
+    width: 194px;
+    color: #000;
+    font-family: "Space Grotesk";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.social-icon img {
+    position: relative;
+    left: -100px;
+}
+
+.team-member-dtls hr {
+    border: 1px solid #000;
+    margin: 20px 0px;
+}
+
+.team-member-dtls p {
+    width: 317px;
+    color: #000;
+    font-family: "Space Grotesk";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+    /* Testimonial */
+
+    .testimonial {
+        display: flex;
+        width:100%;
+        padding: 0px 70px;
+        align-items: flex-start;
+        gap: 40px;
+        margin: 100px 0px;
+    }
+
+    .testimonial h2 {
+        width: 250px;
+        height: 51px;
+        color: #000;
+        background-color: #B9FF66;
+        font-family: "Space Grotesk";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border-radius: 7px;
+        padding: 0px 7px;
+    }
+
+    .testimonial p {
+        width: 473px;
+        flex-shrink: 0;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    /* tolltip */
+
+
+    .tooltip {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .toltip-main {
+        width: 1200px;
+        height: 500px;
+        display: inline-flex;
+        padding: 118px 313px 62px 0px;
+        align-items: center;
+        border-radius: 45px;
+        background: #191A23;
+    }
+
+    /* left */
+    .comment-para p {
+        width: 502px;
+        color: #FFF;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position: absolute;
+        z-index: 1;
+        outline: 1px solid #B9FF66;
+        margin-top: -170px;
+        margin-left: 80px;
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    .comment-para p::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -55px;
+        border-width: 20px;
+        border-style: solid;
+        border-color: #B9FF66 transparent transparent transparent;
+        margin-left: -46%;
+
+    }
+
+    .comment-parson {
+        position: absolute;
+        margin-left: 100px;
+        margin-top: 70px;
+        width: 526px;
+    }
+
+    .comment-parson h4 {
+        color: #B9FF66;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .comment-parson p {
+        color: #FFF;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+
+    /* right */
+
+    .comment-para2 p {
+        width: 502px;
+        color: #FFF;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position: absolute;
+        z-index: 2;
+        outline: 1px solid #B9FF66;
+        margin-top: -170px;
+        right: 130px;
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    .comment-para2 p::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -55px;
+        border-width: 20px;
+        border-style: solid;
+        border-color: #B9FF66 transparent transparent transparent;
+        margin-left: -46%;
+
+    }
+
+    .comment-parson2 {
+        position: absolute;
+        right: 80px;
+        margin-top: 70px;
+        width: 526px;
+    }
+
+    .comment-parson2 h4 {
+        color: #B9FF66;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .comment-parson2 p {
+        color: #FFF;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+
+    /* contact */
+
+
+    .contact-head {
+        display: flex;
+        width: 1330px;
+        padding: 0px 70px;
+        align-items: flex-start;
+        gap: 40px;
+        margin: 100px 0px;
+    }
+
+    .contact-head h2 {
+        width: 250px;
+        height: 51px;
+        color: #000;
+        background-color: #B9FF66;
+        font-family: "Space Grotesk";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border-radius: 7px;
+        padding: 0px 7px;
+    }
+
+    .contact-head p {
+        width: 473px;
+        flex-shrink: 0;
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+
+    /* cotact form */
+
+
+    .forms-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .forms {
+        padding-right: 235px;
+    }
+
+    .cotact-form {
+        display: flex;
+        width: 1240px;
+        padding: 60px 70px 80px 70px;
+        align-items: flex-start;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: 45px;
+        background: #F3F3F3;
+    }
+
+    .container {
+        display: inline-flex;
+        gap: 10px;
+    }
+
+    label {
+        color: #000;
+        font-family: "Space Grotesk";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    input#SayHi,
+    input#GetaQuote {
+        width: 28px;
+        height: 28px;
+        flex-shrink: 0;
+        border-radius: 29px;
+        border: 1px solid #000;
+        background: #FFF;
+        margin-left: 10px;
+        accent-color:  #B9FF66;
+    }
+
+
+    input#Name {
+        display: flex;
+        width: 556px;
+        padding: 18px 30px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 14px;
+        border: 1px solid #000;
+        background: #FFF;
+    }
+
+    input#Email {
+        display: flex;
+        width: 556px;
+        padding: 18px 30px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 14px;
+        border: 1px solid #000;
+        background: #FFF;
+    }
+
+    textarea#Message {
+        display: flex;
+        width: 556px;
+        height: 190px;
+        padding: 18px 30px;
+        align-items: flex-start;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: 14px;
+        border: 1px solid #000;
+        background: #FFF;
+    }
+
+    button.form-btn2 {
+        visibility: hidden;
+        display: none;
+    }
+
+    button.form-btn {
+        display: flex;
+        width: 556px;
+        padding: 20px 35px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 14px;
+        background: #191A23;
+        color: #FFF;
+        text-align: center;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        margin-top: 30px;
+
+    }
+
+    .bg-img img {
+        width: 691.57px;
+        height: 648px;
+        flex-shrink: 0;
+
+    }
+
+
+
+    /* footer */
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-footer-container {
+        width: 1200px;
+        height: 500px;
+        display: flex;
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        border-radius: 45px 45px 0px 0px;
+        background: #191A23;
+        margin-top: 100px;
+    }
+
+    .footer-nav {
+        display: flex;
+        width:100%;
+        align-items: center;
+        justify-content: space-between;
+        gap: 155px;
+
+    }
+
+    .footer-nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        flex-direction: row;
+    }
+
+    .footer-nav ul li a {
+        color: #FFF;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration-line: underline;
+    }
+    .social-iconss2{
+        visibility: hidden;
+        display: none;
+    }
+    .social-iconss {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        
+    }
+
+    .social-iconss img:hover {
+        cursor: pointer;
+    }
+
+
+    .footer-body {
+        display: flex;
+        align-items: flex-start;
+        gap: 154px;
+    }
+
+    .contact-address {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 27px;
+        width: 332px;
+        height: 182px;
+    }
+
+    .contact-address h4 {
+        width: 200px;
+        height: 26px;
+        color: #000;
+        background-color: #B9FF66;
+        border-radius: 5px;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .contact-address p {
+        width: 332px;
+        height: 46px;
+        color: #FFF;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .subscriton-side {
+        width: 634px;
+        height: 184px;
+        display: flex;
+        padding: 58px 40px;
+        align-items: flex-start;
+        gap: 20px;
+        border-radius: 14px;
+        background: #292A32;
+    }
+
+    input.subs {
+        display: flex;
+        width: 285px;
+        padding: 22px 35px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 14px;
+        border: 1px solid #FFF;
+        color: #FFF;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    button.sub-btn {
+        display: flex;
+        padding: 10px 25px;
+        align-items: center;
+        gap: 10px;
+        border-radius: 14px;
+        background: #B9FF66;
+        color: #000;
+        text-align: center;
+        font-family: "Space Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        width: 249px;
+        height: 68px;
+        cursor: pointer;
+    }
+
+    .hr hr {
+        width: 1120px;
+        height: 1px;
+    }
+
+    .footer-p {
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+
+    }
+
+    .footer-p p {
+        color: #FFF;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    .footer-p a {
+        color: #FFF;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        text-decoration-line: underline;
+    }
+
+}
+
+/* -------------------------------- */
+/* for universal */
+/* -------------------------------- */
+.logo {
+    display: flex;
+    width: 219.537px;
+    height: 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 12.92px;
+    cursor: pointer;
+}
+
+/* hero section */
+.hero-section {
+    display: flex;
+    gap: 70px;
+}
+
+.hero-text button:hover {
+    background: #353748;
+}
+
+/* company logo */
+.company-logo img {
+    filter: grayscale(100%);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.company-logo img:hover {
+    filter: grayscale(0%);
+    background-color: #ebe8e8;
+    padding: 10px;
+    border-radius: 10px;
+}
+/* main tag */
+main {
+    overflow: hidden;
+}
+
+
+
+
+
+.menu-btn a, .bbh a{
+    text-decoration: none;
+}
